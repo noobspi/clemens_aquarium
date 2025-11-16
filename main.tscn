@@ -1,43 +1,187 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7cpgkmvkjp54"]
+[gd_scene load_steps=11 format=3 uid="uid://c7cpgkmvkjp54"]
 
 [ext_resource type="Script" uid="uid://dmtq4640bkxss" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cgdlbgcolgeic" path="res://assets/bg/bg1.jpg" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bllwmxybj8g2w" path="res://assets/fauna/fish2.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bxi0uq1exglrm" path="res://assets/flora/stone2.png" id="3_kek77"]
 [ext_resource type="PackedScene" uid="uid://6olh8im6dyai" path="res://fish.tscn" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://be1l047yi00qv" path="res://assets/flora/ston1.png" id="4_4c57u"]
+[ext_resource type="Texture2D" uid="uid://chu40lpr51ala" path="res://assets/flora/algea2.png" id="5_4c57u"]
+[ext_resource type="Texture2D" uid="uid://b3ovx12ecyv8b" path="res://assets/flora/algea1.png" id="5_efxa6"]
+[ext_resource type="Texture2D" uid="uid://b2prg4gu4t3it" path="res://assets/flora/stone_algea1.png" id="6_dg77c"]
+[ext_resource type="Texture2D" uid="uid://xclpgmc3ia8" path="res://assets/flora/aloevera1.png" id="7_ycdy4"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_0xm2m")
 
-[node name="bg" type="Sprite2D" parent="."]
+[node name="bg_layer_0" type="Node2D" parent="."]
+
+[node name="bg_water_" type="Sprite2D" parent="bg_layer_0"]
 position = Vector2(952.9999, 543.99976)
 scale = Vector2(3.2516341, 3.5294127)
 texture = ExtResource("2_h2yge")
 
+[node name="Stone3" type="Sprite2D" parent="bg_layer_0"]
+self_modulate = Color(1, 1, 1, 0.7294118)
+position = Vector2(615, 794)
+rotation = -3.1415925
+scale = Vector2(0.58715147, -0.7544561)
+texture = ExtResource("3_kek77")
+
+[node name="Algea11" type="Sprite2D" parent="bg_layer_0"]
+position = Vector2(164.24611, 707.81085)
+scale = Vector2(0.46388665, 0.35069224)
+texture = ExtResource("5_4c57u")
+
 [node name="sprite_fish1" type="Sprite2D" parent="."]
-position = Vector2(474.719, 425.89)
-scale = Vector2(-0.339665, 0.339665)
+position = Vector2(113, 621)
+rotation = -3.1415925
+scale = Vector2(0.339665, -0.339665)
 texture = ExtResource("3_h2yge")
 
-[node name="fish_pool" type="Node2D" parent="."]
+[node name="bg_layer_1" type="Node2D" parent="."]
 
-[node name="fish" parent="fish_pool" instance=ExtResource("4_1bvp3")]
-position = Vector2(182, 623)
+[node name="Algea9" type="Sprite2D" parent="bg_layer_1"]
+position = Vector2(1087, 688)
+scale = Vector2(0.53037125, 0.5662263)
+texture = ExtResource("5_4c57u")
 
-[node name="cola_fish" parent="fish_pool" instance=ExtResource("4_1bvp3")]
-modulate = Color(0.682353, 0.972549, 0.137255, 1)
-position = Vector2(131, 259)
-anim_speed_scale = 5.0
+[node name="Algea13" type="Sprite2D" parent="bg_layer_1"]
+position = Vector2(798, 866.00006)
+scale = Vector2(0.682647, 0.62677366)
+texture = ExtResource("5_efxa6")
 
-[node name="schooli" parent="fish_pool" instance=ExtResource("4_1bvp3")]
-position = Vector2(150, 475)
+[node name="Ston1" type="Sprite2D" parent="bg_layer_1"]
+position = Vector2(1099, 830)
+scale = Vector2(0.5324918, 0.45610845)
+texture = ExtResource("4_4c57u")
+
+[node name="Algea3" type="Sprite2D" parent="bg_layer_1"]
+position = Vector2(45.000122, 989.00006)
+scale = Vector2(0.3062246, 0.123983696)
+texture = ExtResource("5_4c57u")
+
+[node name="fish" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(157, 327)
 fish_type = 1
 
-[node name="ysub" parent="fish_pool" instance=ExtResource("4_1bvp3")]
-position = Vector2(212, 897)
+[node name="bg_layer_2" type="Node2D" parent="."]
+position = Vector2(1087, 688)
+scale = Vector2(0.53037125, 0.5662263)
+
+[node name="Algea12" type="Sprite2D" parent="bg_layer_2"]
+position = Vector2(-904.9105, -185.38635)
+scale = Vector2(1.0137398, 0.866358)
+texture = ExtResource("5_4c57u")
+
+[node name="Stone2" type="Sprite2D" parent="bg_layer_2"]
+position = Vector2(-1042.6659, 316.12817)
+scale = Vector2(0.98939574, 0.8961156)
+texture = ExtResource("3_kek77")
+
+[node name="Aloevera2" type="Sprite2D" parent="bg_layer_2"]
+position = Vector2(-1314.1741, 614.59534)
+scale = Vector2(0.39056224, 0.3658307)
+texture = ExtResource("7_ycdy4")
+
+[node name="schooli" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(101, 803)
+anim_speed_scale = 3.0
+fish_type = 1
+
+[node name="bg_layer_3" type="Node2D" parent="."]
+position = Vector2(389.99988, 1036)
+scale = Vector2(0.20714298, 0.20714295)
+
+[node name="Algea10" type="Sprite2D" parent="bg_layer_3"]
+position = Vector2(4972.4116, -975.17236)
+scale = Vector2(2.5598085, 2.1321015)
+texture = ExtResource("5_4c57u")
+
+[node name="Stone4" type="Sprite2D" parent="bg_layer_3"]
+position = Vector2(5768.963, -666.20654)
+rotation = -3.1415925
+scale = Vector2(2.3130918, -2.2509103)
+texture = ExtResource("3_kek77")
+
+[node name="Aloevera3" type="Sprite2D" parent="bg_layer_3"]
+position = Vector2(4156.55, -33.793457)
+scale = Vector2(1.4413785, 1.4413784)
+texture = ExtResource("7_ycdy4")
+
+[node name="cola_fish" parent="." instance=ExtResource("4_1bvp3")]
+modulate = Color(0.682353, 0.972549, 0.137255, 1)
+position = Vector2(106, 110)
+anim_speed_scale = 5.0
+
+[node name="ysub" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(-125, 996)
 anim_speed_scale = 2.0
 fish_type = 2
 
-[node name="fg" type="Sprite2D" parent="."]
+[node name="fg_layer_0" type="Node2D" parent="."]
+position = Vector2(1087, 688)
+scale = Vector2(0.53037125, 0.5662263)
+
+[node name="Algea8" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(1512.1482, 607.531)
+scale = Vector2(0.3114058, 0.110678956)
+texture = ExtResource("5_4c57u")
+
+[node name="Algea2" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(1297.2043, 535.1217)
+scale = Vector2(0.57737786, 0.21896492)
+texture = ExtResource("5_4c57u")
+
+[node name="Algea6" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(1086.0317, 559.8468)
+scale = Vector2(0.5343112, 0.17738552)
+texture = ExtResource("5_4c57u")
+
+[node name="Algea9" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(1382.0508, 490.96985)
+scale = Vector2(0.8809038, 0.8035128)
+texture = ExtResource("5_efxa6")
+
+[node name="Algea4" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(1048.3223, 543.95215)
+scale = Vector2(0.639951, 0.59942746)
+texture = ExtResource("5_efxa6")
+
+[node name="Algea7" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(987.98706, 611.0631)
+scale = Vector2(0.3114058, 0.110678986)
+texture = ExtResource("5_4c57u")
+
+[node name="Algea5" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(1221.7856, 581.0398)
+scale = Vector2(0.5018675, 0.44458747)
+texture = ExtResource("5_efxa6")
+
+[node name="Algea1" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(-1012.4984, 473.30896)
+scale = Vector2(1.1140919, 0.91025245)
+texture = ExtResource("5_efxa6")
+
+[node name="Aloevera1" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(-1153.9084, 582.8059)
+scale = Vector2(0.7057051, 0.6610179)
+texture = ExtResource("7_ycdy4")
+
+[node name="StoneAlgea1" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(-1749.7175, 526.2914)
+scale = Vector2(1.1737373, 1.099413)
+texture = ExtResource("6_dg77c")
+
+[node name="StoneAlgea2" type="Sprite2D" parent="fg_layer_0"]
+position = Vector2(-181.00537, 492.73572)
+scale = Vector2(1.5857936, 1.4853768)
+texture = ExtResource("6_dg77c")
+
+[node name="fg_layer_1" type="Node2D" parent="."]
+visible = false
+
+[node name="water_effect" type="Sprite2D" parent="fg_layer_1"]
 modulate = Color(1, 1, 1, 0.20784314)
 position = Vector2(953.7498, 552.49963)
 scale = Vector2(3.258988, 3.5634694)
