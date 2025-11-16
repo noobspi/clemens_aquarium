@@ -1,3 +1,4 @@
+class_name Fish
 extends Node2D
 
 enum FishType  {BLINKY, SCHOOLFISH, SUBMARINE}

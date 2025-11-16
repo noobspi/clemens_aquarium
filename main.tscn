@@ -16,6 +16,7 @@
 script = ExtResource("1_0xm2m")
 
 [node name="bg_water_" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(952.9999, 543.99976)
 scale = Vector2(3.2516341, 3.5294127)
 texture = ExtResource("2_h2yge")
@@ -80,6 +81,14 @@ texture = ExtResource("5_4c57u")
 
 [node name="fish_layer0" type="Node2D" parent="Aquarium"]
 
+[node name="blinky" parent="Aquarium/fish_layer0" instance=ExtResource("4_1bvp3")]
+position = Vector2(127, 207)
+
+[node name="schooli" parent="Aquarium/fish_layer0" instance=ExtResource("4_1bvp3")]
+position = Vector2(-22, 525)
+anim_speed_scale = 3.0
+fish_type = 1
+
 [node name="bg_layer_1" type="Node2D" parent="Aquarium"]
 
 [node name="Algea9" type="Sprite2D" parent="Aquarium/bg_layer_1"]
@@ -88,14 +97,14 @@ scale = Vector2(0.53037125, 0.5662263)
 texture = ExtResource("5_4c57u")
 
 [node name="Ston2" type="Sprite2D" parent="Aquarium/bg_layer_1"]
-position = Vector2(1477.0001, 853)
+position = Vector2(1280.9998, 782.00006)
 rotation = 3.1415927
-scale = Vector2(0.42673853, -0.2766514)
+scale = Vector2(0.6094908, -0.43637922)
 texture = ExtResource("4_4c57u")
 
 [node name="Ston1" type="Sprite2D" parent="Aquarium/bg_layer_1"]
-position = Vector2(1154, 789.00006)
-scale = Vector2(0.5324918, 0.5155641)
+position = Vector2(1000.00006, 814)
+scale = Vector2(0.62066597, 0.5155641)
 texture = ExtResource("4_4c57u")
 
 [node name="Algea13" type="Sprite2D" parent="Aquarium/bg_layer_1"]
@@ -110,13 +119,10 @@ texture = ExtResource("5_4c57u")
 
 [node name="fish_layer1" type="Node2D" parent="Aquarium"]
 
-[node name="blinky" parent="Aquarium/fish_layer1" instance=ExtResource("4_1bvp3")]
-position = Vector2(127, 207)
-
-[node name="schooli" parent="Aquarium/fish_layer1" instance=ExtResource("4_1bvp3")]
-position = Vector2(-22, 525)
-anim_speed_scale = 3.0
-fish_type = 1
+[node name="cola_fish" parent="Aquarium/fish_layer1" instance=ExtResource("4_1bvp3")]
+modulate = Color(0.682353, 0.972549, 0.137255, 1)
+position = Vector2(87, 742)
+anim_speed_scale = 5.0
 
 [node name="bg_layer_2" type="Node2D" parent="Aquarium"]
 position = Vector2(1087, 688)
@@ -128,8 +134,8 @@ scale = Vector2(1.0137398, 0.97760016)
 texture = ExtResource("5_4c57u")
 
 [node name="Stone2" type="Sprite2D" parent="Aquarium/bg_layer_2"]
-position = Vector2(-1197.2744, 340.85315)
-scale = Vector2(-0.8361935, 0.896)
+position = Vector2(-1169.6208, 340.85315)
+scale = Vector2(-0.861882, 0.896)
 texture = ExtResource("3_kek77")
 
 [node name="Aloevera2" type="Sprite2D" parent="Aquarium/bg_layer_2"]
@@ -139,10 +145,10 @@ texture = ExtResource("7_ycdy4")
 
 [node name="fish_layer2" type="Node2D" parent="Aquarium"]
 
-[node name="cola_fish" parent="Aquarium/fish_layer2" instance=ExtResource("4_1bvp3")]
-modulate = Color(0.682353, 0.972549, 0.137255, 1)
-position = Vector2(87, 742)
-anim_speed_scale = 5.0
+[node name="submarine" parent="Aquarium/fish_layer2" instance=ExtResource("4_1bvp3")]
+position = Vector2(111, 965)
+anim_speed_scale = 2.0
+fish_type = 2
 
 [node name="bg_layer_3" type="Node2D" parent="Aquarium"]
 position = Vector2(389.99988, 1036)
@@ -166,16 +172,11 @@ texture = ExtResource("7_ycdy4")
 
 [node name="Algea14" type="Sprite2D" parent="Aquarium/bg_layer_3"]
 self_modulate = Color(0.48473388, 0.6400672, 0.25210685, 1)
-position = Vector2(1583.448, -526.2067)
+position = Vector2(1337.2412, -511.72397)
 scale = Vector2(2.8457892, 2.7399821)
 texture = ExtResource("5_efxa6")
 
 [node name="fish_layer3" type="Node2D" parent="Aquarium"]
-
-[node name="submarine" parent="Aquarium/fish_layer3" instance=ExtResource("4_1bvp3")]
-position = Vector2(111, 965)
-anim_speed_scale = 2.0
-fish_type = 2
 
 [node name="Train" type="Node2D" parent="Aquarium/fish_layer3"]
 visible = false
@@ -270,11 +271,9 @@ scale = Vector2(1.1737373, 1.099413)
 texture = ExtResource("6_dg77c")
 
 [node name="StoneAlgea2" type="Sprite2D" parent="Aquarium/bg_layer_4"]
-position = Vector2(-181.00537, 492.73572)
+position = Vector2(-88.61715, 482.13937)
 scale = Vector2(1.5857936, 1.4853768)
 texture = ExtResource("6_dg77c")
-
-[node name="fish_layer4" type="Node2D" parent="Aquarium"]
 
 [node name="bg_layer_5" type="Node2D" parent="Aquarium"]
 visible = false
