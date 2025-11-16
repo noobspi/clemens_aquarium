@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b85mo2ur1sgh8"
-path="res://.godot/imported/yellow_submarine_04.png-2c3485a08f044be6dae2acfdcad05f78.ctex"
+uid="uid://cj8mgq566as3r"
+path="res://.godot/imported/steam_train.png-27b66e7d0cf05ebbc45cd380cc3994c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://eegg/yellow_submarine_04.png"
-dest_files=["res://.godot/imported/yellow_submarine_04.png-2c3485a08f044be6dae2acfdcad05f78.ctex"]
+source_file="res://eegg/steam_train.png"
+dest_files=["res://.godot/imported/steam_train.png-27b66e7d0cf05ebbc45cd380cc3994c2.ctex"]
 
 [params]
 

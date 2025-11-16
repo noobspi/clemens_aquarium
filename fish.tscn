@@ -33,12 +33,12 @@
 [ext_resource type="Texture2D" uid="uid://bbd8xsugkrloa" path="res://assets/fauna/anim_fish2/fish2_009.png" id="31_6luot"]
 [ext_resource type="Texture2D" uid="uid://baehrsvtii2tn" path="res://assets/fauna/anim_fish2/fish2_010.png" id="32_rht0h"]
 [ext_resource type="Texture2D" uid="uid://cor81cxp3hrj0" path="res://assets/fauna/anim_fish2/fish2_011.png" id="33_wgkqe"]
-[ext_resource type="Texture2D" uid="uid://cah3afsakx2eb" path="res://eegg/yellow_submarine_00.png" id="34_mf3od"]
-[ext_resource type="Texture2D" uid="uid://b3ofqcf4nwtyf" path="res://eegg/yellow_submarine_01.png" id="35_f1p27"]
-[ext_resource type="Texture2D" uid="uid://cxcif2ak1i6as" path="res://eegg/yellow_submarine_02.png" id="36_43uwq"]
-[ext_resource type="Texture2D" uid="uid://cs7k62e6npjww" path="res://eegg/yellow_submarine_03.png" id="37_6luot"]
-[ext_resource type="Texture2D" uid="uid://b85mo2ur1sgh8" path="res://eegg/yellow_submarine_04.png" id="38_rht0h"]
-[ext_resource type="Texture2D" uid="uid://dlt4p0hm3yc3n" path="res://eegg/yellow_submarine_05.png" id="39_wgkqe"]
+[ext_resource type="Texture2D" uid="uid://cah3afsakx2eb" path="res://assets/fauna/yellow_submarine/yellow_submarine_00.png" id="34_mf3od"]
+[ext_resource type="Texture2D" uid="uid://b3ofqcf4nwtyf" path="res://assets/fauna/yellow_submarine/yellow_submarine_01.png" id="35_f1p27"]
+[ext_resource type="Texture2D" uid="uid://cxcif2ak1i6as" path="res://assets/fauna/yellow_submarine/yellow_submarine_02.png" id="36_43uwq"]
+[ext_resource type="Texture2D" uid="uid://cs7k62e6npjww" path="res://assets/fauna/yellow_submarine/yellow_submarine_03.png" id="37_6luot"]
+[ext_resource type="Texture2D" uid="uid://b85mo2ur1sgh8" path="res://assets/fauna/yellow_submarine/yellow_submarine_04.png" id="38_rht0h"]
+[ext_resource type="Texture2D" uid="uid://dlt4p0hm3yc3n" path="res://assets/fauna/yellow_submarine/yellow_submarine_05.png" id="39_wgkqe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f1p27"]
 animations = [{

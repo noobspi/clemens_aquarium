@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlt4p0hm3yc3n"
-path="res://.godot/imported/yellow_submarine_05.png-103f7b3b32dc4e6cbd1ef4da3d70538e.ctex"
+uid="uid://b3ofqcf4nwtyf"
+path="res://.godot/imported/yellow_submarine_01.png-d8842b3be8672188393fbf6d5a00c448.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://eegg/yellow_submarine_05.png"
-dest_files=["res://.godot/imported/yellow_submarine_05.png-103f7b3b32dc4e6cbd1ef4da3d70538e.ctex"]
+source_file="res://assets/fauna/yellow_submarine/yellow_submarine_01.png"
+dest_files=["res://.godot/imported/yellow_submarine_01.png-d8842b3be8672188393fbf6d5a00c448.ctex"]
 
 [params]
 
