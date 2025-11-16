@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7cpgkmvkjp54"]
+
+[ext_resource type="Script" uid="uid://dmtq4640bkxss" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://cgdlbgcolgeic" path="res://assets/bg/bg1.jpg" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bllwmxybj8g2w" path="res://assets/fauna/fish2.png" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://6olh8im6dyai" path="res://fish.tscn" id="4_1bvp3"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(952.9999, 543.99976)
+scale = Vector2(3.2516341, 3.5294127)
+texture = ExtResource("2_h2yge")
+
+[node name="sprite_fish1" type="Sprite2D" parent="."]
+position = Vector2(474.719, 425.89)
+scale = Vector2(-0.339665, 0.339665)
+texture = ExtResource("3_h2yge")
+
+[node name="fish_pool" type="Node2D" parent="."]
+
+[node name="fish" parent="fish_pool" instance=ExtResource("4_1bvp3")]
+position = Vector2(182, 623)
+
+[node name="cola_fish" parent="fish_pool" instance=ExtResource("4_1bvp3")]
+modulate = Color(0.682353, 0.972549, 0.137255, 1)
+position = Vector2(131, 259)
+anim_speed_scale = 5.0
+
+[node name="schooli" parent="fish_pool" instance=ExtResource("4_1bvp3")]
+position = Vector2(150, 475)
+fish_type = 1
+
+[node name="ysub" parent="fish_pool" instance=ExtResource("4_1bvp3")]
+position = Vector2(212, 897)
+anim_speed_scale = 2.0
+fish_type = 2
+
+[node name="fg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.20784314)
+position = Vector2(953.7498, 552.49963)
+scale = Vector2(3.258988, 3.5634694)
+texture = ExtResource("2_h2yge")

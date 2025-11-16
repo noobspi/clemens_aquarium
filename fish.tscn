@@ -1,0 +1,202 @@
+[gd_scene load_steps=43 format=3 uid="uid://6olh8im6dyai"]
+
+[ext_resource type="Script" uid="uid://43dqagiew4se" path="res://fish.gd" id="1_jogki"]
+[ext_resource type="Texture2D" uid="uid://bc6jfre0fec3v" path="res://assets/fauna/anim_fish1/fish1_000.png" id="1_wbpsd"]
+[ext_resource type="Texture2D" uid="uid://bkififqpwj74l" path="res://assets/fauna/anim_fish1/fish1_001.png" id="2_jogki"]
+[ext_resource type="Texture2D" uid="uid://c17b62jc60026" path="res://assets/fauna/anim_fish1/fish1_002.png" id="3_5yinw"]
+[ext_resource type="Texture2D" uid="uid://dsxrs3b4ivr3h" path="res://assets/fauna/anim_fish1/fish1_003.png" id="4_bgh2k"]
+[ext_resource type="Texture2D" uid="uid://crh6wx6pphci5" path="res://assets/fauna/anim_fish1/fish1_004.png" id="5_jj7e5"]
+[ext_resource type="Texture2D" uid="uid://cberai0em5cua" path="res://assets/fauna/anim_fish1/fish1_005.png" id="6_b2ca3"]
+[ext_resource type="Texture2D" uid="uid://cfpvl67tstk84" path="res://assets/fauna/anim_fish1/fish1_006.png" id="7_tij7x"]
+[ext_resource type="Texture2D" uid="uid://cxcr2woqxrbbr" path="res://assets/fauna/anim_fish1/fish1_007.png" id="8_rch05"]
+[ext_resource type="Texture2D" uid="uid://ckktw4htu3pqi" path="res://assets/fauna/anim_fish1/fish1_008.png" id="9_65i5b"]
+[ext_resource type="Texture2D" uid="uid://dpd5ykb5pe3v" path="res://assets/fauna/anim_fish1/fish1_009.png" id="10_xvhgd"]
+[ext_resource type="Texture2D" uid="uid://duka4r6syn2sm" path="res://assets/fauna/anim_fish1/fish1_010.png" id="11_fvtaf"]
+[ext_resource type="Texture2D" uid="uid://cb2lfvsdspr58" path="res://assets/fauna/anim_fish1/fish1_011.png" id="12_17eic"]
+[ext_resource type="Texture2D" uid="uid://bp7cox42av67p" path="res://assets/fauna/anim_fish1/fish1_012.png" id="13_u7nnh"]
+[ext_resource type="Texture2D" uid="uid://bsa4syobcg4l4" path="res://assets/fauna/anim_fish1/fish1_013.png" id="14_ob5m5"]
+[ext_resource type="Texture2D" uid="uid://b5o0hji3q5d4a" path="res://assets/fauna/anim_fish1/fish1_014.png" id="15_u8ci7"]
+[ext_resource type="Texture2D" uid="uid://dwhanikgbrs2r" path="res://assets/fauna/anim_fish1/fish1_015.png" id="16_so8t6"]
+[ext_resource type="Texture2D" uid="uid://bmrpb3vb486hn" path="res://assets/fauna/anim_fish1/fish1_016.png" id="17_f88oc"]
+[ext_resource type="Texture2D" uid="uid://bg7ghu527y1l7" path="res://assets/fauna/anim_fish1/fish1_017.png" id="18_lh0us"]
+[ext_resource type="Texture2D" uid="uid://ci4prptt4lgd0" path="res://assets/fauna/anim_fish1/fish1_018.png" id="19_m82ql"]
+[ext_resource type="Texture2D" uid="uid://bo842crj85d4v" path="res://assets/fauna/anim_fish1/fish1_019.png" id="20_mf3od"]
+[ext_resource type="Texture2D" uid="uid://c6u6dsd8bod2u" path="res://assets/fauna/anim_fish2/fish2_000.png" id="22_ob5m5"]
+[ext_resource type="Texture2D" uid="uid://bq24xhnfbhrgu" path="res://assets/fauna/anim_fish2/fish2_001.png" id="23_u8ci7"]
+[ext_resource type="Texture2D" uid="uid://c3h41x2j3hs7f" path="res://assets/fauna/anim_fish2/fish2_002.png" id="24_so8t6"]
+[ext_resource type="Texture2D" uid="uid://x0p57ik64ydp" path="res://assets/fauna/anim_fish2/fish2_003.png" id="25_f88oc"]
+[ext_resource type="Texture2D" uid="uid://dhkhbympd6sji" path="res://assets/fauna/anim_fish2/fish2_004.png" id="26_lh0us"]
+[ext_resource type="Texture2D" uid="uid://clkh7h1iot161" path="res://assets/fauna/anim_fish2/fish2_005.png" id="27_m82ql"]
+[ext_resource type="Texture2D" uid="uid://ck1v57iwp6ly7" path="res://assets/fauna/anim_fish2/fish2_006.png" id="28_mf3od"]
+[ext_resource type="Texture2D" uid="uid://di6vgb4q6d0ei" path="res://assets/fauna/anim_fish2/fish2_007.png" id="29_f1p27"]
+[ext_resource type="Texture2D" uid="uid://boijmqk1ghodr" path="res://assets/fauna/anim_fish2/fish2_008.png" id="30_43uwq"]
+[ext_resource type="Texture2D" uid="uid://bbd8xsugkrloa" path="res://assets/fauna/anim_fish2/fish2_009.png" id="31_6luot"]
+[ext_resource type="Texture2D" uid="uid://baehrsvtii2tn" path="res://assets/fauna/anim_fish2/fish2_010.png" id="32_rht0h"]
+[ext_resource type="Texture2D" uid="uid://cor81cxp3hrj0" path="res://assets/fauna/anim_fish2/fish2_011.png" id="33_wgkqe"]
+[ext_resource type="Texture2D" uid="uid://cah3afsakx2eb" path="res://eegg/yellow_submarine_00.png" id="34_mf3od"]
+[ext_resource type="Texture2D" uid="uid://b3ofqcf4nwtyf" path="res://eegg/yellow_submarine_01.png" id="35_f1p27"]
+[ext_resource type="Texture2D" uid="uid://cxcif2ak1i6as" path="res://eegg/yellow_submarine_02.png" id="36_43uwq"]
+[ext_resource type="Texture2D" uid="uid://cs7k62e6npjww" path="res://eegg/yellow_submarine_03.png" id="37_6luot"]
+[ext_resource type="Texture2D" uid="uid://b85mo2ur1sgh8" path="res://eegg/yellow_submarine_04.png" id="38_rht0h"]
+[ext_resource type="Texture2D" uid="uid://dlt4p0hm3yc3n" path="res://eegg/yellow_submarine_05.png" id="39_wgkqe"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f1p27"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wbpsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jogki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5yinw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bgh2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jj7e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b2ca3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tij7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rch05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_65i5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xvhgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fvtaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_17eic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_u7nnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ob5m5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_u8ci7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_so8t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_f88oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lh0us")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_m82ql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mf3od")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pfnr0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_ob5m5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_u8ci7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_so8t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_f88oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_lh0us")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_m82ql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mf3od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_f1p27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_43uwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6luot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_rht0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_wgkqe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 13.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8o1v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_mf3od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_f1p27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_43uwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6luot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_rht0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_wgkqe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="fish" type="Node2D"]
+script = ExtResource("1_jogki")
+
+[node name="sprite_blinky" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(-0.393, 0.421)
+sprite_frames = SubResource("SpriteFrames_f1p27")
+frame_progress = 0.315619
+
+[node name="sprite_schoolfish" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(-1.52588e-05, 2)
+scale = Vector2(0.703704, 0.703704)
+sprite_frames = SubResource("SpriteFrames_pfnr0")
+frame_progress = 0.304321
+
+[node name="sprite_submarine" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.6014575, 0.6014575)
+sprite_frames = SubResource("SpriteFrames_f8o1v")
+frame = 3
+frame_progress = 0.5480198
