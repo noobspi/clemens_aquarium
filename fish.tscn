@@ -1,26 +1,26 @@
-[gd_scene load_steps=43 format=3 uid="uid://6olh8im6dyai"]
+[gd_scene load_steps=54 format=3 uid="uid://6olh8im6dyai"]
 
 [ext_resource type="Script" uid="uid://43dqagiew4se" path="res://fish.gd" id="1_jogki"]
-[ext_resource type="Texture2D" uid="uid://bc6jfre0fec3v" path="res://assets/fauna/anim_fish1/fish1_000.png" id="1_wbpsd"]
-[ext_resource type="Texture2D" uid="uid://bkififqpwj74l" path="res://assets/fauna/anim_fish1/fish1_001.png" id="2_jogki"]
-[ext_resource type="Texture2D" uid="uid://c17b62jc60026" path="res://assets/fauna/anim_fish1/fish1_002.png" id="3_5yinw"]
-[ext_resource type="Texture2D" uid="uid://dsxrs3b4ivr3h" path="res://assets/fauna/anim_fish1/fish1_003.png" id="4_bgh2k"]
-[ext_resource type="Texture2D" uid="uid://crh6wx6pphci5" path="res://assets/fauna/anim_fish1/fish1_004.png" id="5_jj7e5"]
-[ext_resource type="Texture2D" uid="uid://cberai0em5cua" path="res://assets/fauna/anim_fish1/fish1_005.png" id="6_b2ca3"]
-[ext_resource type="Texture2D" uid="uid://cfpvl67tstk84" path="res://assets/fauna/anim_fish1/fish1_006.png" id="7_tij7x"]
-[ext_resource type="Texture2D" uid="uid://cxcr2woqxrbbr" path="res://assets/fauna/anim_fish1/fish1_007.png" id="8_rch05"]
-[ext_resource type="Texture2D" uid="uid://ckktw4htu3pqi" path="res://assets/fauna/anim_fish1/fish1_008.png" id="9_65i5b"]
-[ext_resource type="Texture2D" uid="uid://dpd5ykb5pe3v" path="res://assets/fauna/anim_fish1/fish1_009.png" id="10_xvhgd"]
-[ext_resource type="Texture2D" uid="uid://duka4r6syn2sm" path="res://assets/fauna/anim_fish1/fish1_010.png" id="11_fvtaf"]
-[ext_resource type="Texture2D" uid="uid://cb2lfvsdspr58" path="res://assets/fauna/anim_fish1/fish1_011.png" id="12_17eic"]
-[ext_resource type="Texture2D" uid="uid://bp7cox42av67p" path="res://assets/fauna/anim_fish1/fish1_012.png" id="13_u7nnh"]
-[ext_resource type="Texture2D" uid="uid://bsa4syobcg4l4" path="res://assets/fauna/anim_fish1/fish1_013.png" id="14_ob5m5"]
-[ext_resource type="Texture2D" uid="uid://b5o0hji3q5d4a" path="res://assets/fauna/anim_fish1/fish1_014.png" id="15_u8ci7"]
-[ext_resource type="Texture2D" uid="uid://dwhanikgbrs2r" path="res://assets/fauna/anim_fish1/fish1_015.png" id="16_so8t6"]
-[ext_resource type="Texture2D" uid="uid://bmrpb3vb486hn" path="res://assets/fauna/anim_fish1/fish1_016.png" id="17_f88oc"]
-[ext_resource type="Texture2D" uid="uid://bg7ghu527y1l7" path="res://assets/fauna/anim_fish1/fish1_017.png" id="18_lh0us"]
-[ext_resource type="Texture2D" uid="uid://ci4prptt4lgd0" path="res://assets/fauna/anim_fish1/fish1_018.png" id="19_m82ql"]
-[ext_resource type="Texture2D" uid="uid://bo842crj85d4v" path="res://assets/fauna/anim_fish1/fish1_019.png" id="20_mf3od"]
+[ext_resource type="Texture2D" uid="uid://do733dv3h1jg3" path="res://assets/fauna/anim_fish3/fish3_000.png" id="2_f1p27"]
+[ext_resource type="Texture2D" uid="uid://dl28xsua2qsqp" path="res://assets/fauna/anim_fish3/fish3_001.png" id="3_43uwq"]
+[ext_resource type="Texture2D" uid="uid://0afaoncf0d30" path="res://assets/fauna/anim_fish3/fish3_002.png" id="4_6luot"]
+[ext_resource type="Texture2D" uid="uid://b36yggjw147ge" path="res://assets/fauna/anim_fish3/fish3_003.png" id="5_rht0h"]
+[ext_resource type="Texture2D" uid="uid://b1sijsvdrmsnu" path="res://assets/fauna/anim_fish3/fish3_004.png" id="6_wgkqe"]
+[ext_resource type="Texture2D" uid="uid://bmxpjxs3ow2v6" path="res://assets/fauna/anim_fish3/fish3_005.png" id="7_pfnr0"]
+[ext_resource type="Texture2D" uid="uid://dsyna7xfg7mxp" path="res://assets/fauna/anim_fish3/fish3_006.png" id="8_f8o1v"]
+[ext_resource type="Texture2D" uid="uid://c7k4ac57bpujj" path="res://assets/fauna/anim_fish3/fish3_007.png" id="9_ru8xk"]
+[ext_resource type="Texture2D" uid="uid://cn6t3uvmypxqp" path="res://assets/fauna/anim_fish3/fish3_008.png" id="10_ffqjv"]
+[ext_resource type="Texture2D" uid="uid://c50g73jsoy76s" path="res://assets/fauna/anim_fish3/fish3_009.png" id="11_lqt10"]
+[ext_resource type="Texture2D" uid="uid://1pmfmdt37ff7" path="res://assets/fauna/anim_fish3/fish3_010.png" id="12_m408n"]
+[ext_resource type="Texture2D" uid="uid://dtutdyff86xoh" path="res://assets/fauna/anim_fish3/fish3_011.png" id="13_hwt7x"]
+[ext_resource type="Texture2D" uid="uid://crfws54si2u16" path="res://assets/fauna/anim_fish3/fish3_012.png" id="14_2wc0m"]
+[ext_resource type="Texture2D" uid="uid://dj2vcaqxry735" path="res://assets/fauna/anim_fish3/fish3_013.png" id="15_mhr8l"]
+[ext_resource type="Texture2D" uid="uid://dqwjgnp6cwvnc" path="res://assets/fauna/anim_fish3/fish3_014.png" id="16_7eesx"]
+[ext_resource type="Texture2D" uid="uid://b7aetc1ba6y4g" path="res://assets/fauna/anim_fish3/fish3_015.png" id="17_3xqcr"]
+[ext_resource type="Texture2D" uid="uid://hfar0lkrp2h3" path="res://assets/fauna/anim_fish3/fish3_016.png" id="18_teadc"]
+[ext_resource type="Texture2D" uid="uid://xykmsoqr6qr7" path="res://assets/fauna/anim_fish3/fish3_017.png" id="19_uuhps"]
+[ext_resource type="Texture2D" uid="uid://bng2nhco2y3t0" path="res://assets/fauna/anim_fish3/fish3_018.png" id="20_1old1"]
+[ext_resource type="Texture2D" uid="uid://c6atnf2ykaxkm" path="res://assets/fauna/anim_fish3/fish3_019.png" id="21_je0xk"]
 [ext_resource type="Texture2D" uid="uid://c6u6dsd8bod2u" path="res://assets/fauna/anim_fish2/fish2_000.png" id="22_ob5m5"]
 [ext_resource type="Texture2D" uid="uid://bq24xhnfbhrgu" path="res://assets/fauna/anim_fish2/fish2_001.png" id="23_u8ci7"]
 [ext_resource type="Texture2D" uid="uid://c3h41x2j3hs7f" path="res://assets/fauna/anim_fish2/fish2_002.png" id="24_so8t6"]
@@ -39,69 +39,70 @@
 [ext_resource type="Texture2D" uid="uid://cs7k62e6npjww" path="res://assets/fauna/yellow_submarine/yellow_submarine_03.png" id="37_6luot"]
 [ext_resource type="Texture2D" uid="uid://b85mo2ur1sgh8" path="res://assets/fauna/yellow_submarine/yellow_submarine_04.png" id="38_rht0h"]
 [ext_resource type="Texture2D" uid="uid://dlt4p0hm3yc3n" path="res://assets/fauna/yellow_submarine/yellow_submarine_05.png" id="39_wgkqe"]
+[ext_resource type="Texture2D" uid="uid://hynmgtxy3eos" path="res://assets/fauna/jellyfish_atlas.png" id="40_f1p27"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f1p27"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_wbpsd")
+"texture": ExtResource("2_f1p27")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_jogki")
+"texture": ExtResource("3_43uwq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_5yinw")
+"texture": ExtResource("4_6luot")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_bgh2k")
+"texture": ExtResource("5_rht0h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_jj7e5")
+"texture": ExtResource("6_wgkqe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_b2ca3")
+"texture": ExtResource("7_pfnr0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_tij7x")
+"texture": ExtResource("8_f8o1v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_rch05")
+"texture": ExtResource("9_ru8xk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_65i5b")
+"texture": ExtResource("10_ffqjv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_xvhgd")
+"texture": ExtResource("11_lqt10")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_fvtaf")
+"texture": ExtResource("12_m408n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_17eic")
+"texture": ExtResource("13_hwt7x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_u7nnh")
+"texture": ExtResource("14_2wc0m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_ob5m5")
+"texture": ExtResource("15_mhr8l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_u8ci7")
+"texture": ExtResource("16_7eesx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_so8t6")
+"texture": ExtResource("17_3xqcr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_f88oc")
+"texture": ExtResource("18_teadc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_lh0us")
+"texture": ExtResource("19_uuhps")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_m82ql")
+"texture": ExtResource("20_1old1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_mf3od")
+"texture": ExtResource("21_je0xk")
 }],
 "loop": true,
 "name": &"default",
@@ -178,25 +179,102 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1p27"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(1, 1, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43uwq"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(130, 1, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6luot"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(259, 1, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rht0h"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(388, 1, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgkqe"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(517, 1, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfnr0"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(1, 130, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8o1v"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(130, 130, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru8xk"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(259, 130, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffqjv"]
+atlas = ExtResource("40_f1p27")
+region = Rect2(388, 130, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m408n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1p27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43uwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6luot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rht0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgkqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pfnr0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8o1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru8xk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffqjv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
 [node name="fish" type="Node2D"]
 script = ExtResource("1_jogki")
 
 [node name="sprite_blinky" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 1)
-scale = Vector2(-0.393, 0.421)
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_f1p27")
-frame_progress = 0.315619
+frame_progress = 0.36030427
 
 [node name="sprite_schoolfish" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(-1.52588e-05, 2)
 scale = Vector2(0.703704, 0.703704)
 sprite_frames = SubResource("SpriteFrames_pfnr0")
-frame_progress = 0.304321
+frame_progress = 0.05352963
 
 [node name="sprite_submarine" type="AnimatedSprite2D" parent="."]
 visible = false
 scale = Vector2(0.6014575, 0.6014575)
 sprite_frames = SubResource("SpriteFrames_f8o1v")
-frame = 3
-frame_progress = 0.5480198
+frame_progress = 0.49762872
+
+[node name="sprite_jellyfish" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(0, -17)
+scale = Vector2(1.1596682, 1.1596682)
+sprite_frames = SubResource("SpriteFrames_m408n")
+frame_progress = 0.66495144
