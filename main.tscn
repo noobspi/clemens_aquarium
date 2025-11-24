@@ -93,18 +93,21 @@ texture = ExtResource("5_4c57u")
 [node name="fish_layer0" type="Node2D" parent="Aquarium"]
 
 [node name="blinky" parent="Aquarium/fish_layer0" instance=ExtResource("4_1bvp3")]
-position = Vector2(1000, 199)
+position = Vector2(1261, 194)
+swim_speed = 250
+wobble_radius = 30.0
+debug_ai = true
 
 [node name="schooli" parent="Aquarium/fish_layer0" instance=ExtResource("4_1bvp3")]
 position = Vector2(366, 138)
-anim_speed_scale = 3.0
 fish_type = 1
+swim_speed = 140
+debug_ai = true
 
 [node name="jellyfish" parent="Aquarium/fish_layer0" instance=ExtResource("4_1bvp3")]
-position = Vector2(545, 307)
-swim_speed = 300
-anim_speed_scale = 2.0
-fish_type = 3
+position = Vector2(820, 283)
+fish_type = 2
+swim_speed = 50
 
 [node name="bg_layer_1" type="Node2D" parent="Aquarium"]
 
@@ -120,14 +123,14 @@ scale = Vector2(0.53037125, 0.5662263)
 texture = ExtResource("5_4c57u")
 
 [node name="Ston2" type="Sprite2D" parent="Aquarium/bg_layer_1"]
-position = Vector2(1280.9998, 782.00006)
+position = Vector2(1005.9999, 958)
 rotation = 3.1415927
-scale = Vector2(0.6094908, -0.43637922)
+scale = Vector2(0.6094908, -0.39427084)
 texture = ExtResource("4_4c57u")
 
 [node name="Ston1" type="Sprite2D" parent="Aquarium/bg_layer_1"]
-position = Vector2(1000.00006, 814)
-scale = Vector2(0.62066597, 0.5155641)
+position = Vector2(1000.00006, 872.57825)
+scale = Vector2(0.62066597, 0.42353225)
 texture = ExtResource("4_4c57u")
 
 [node name="Algea13" type="Sprite2D" parent="Aquarium/bg_layer_1"]
@@ -144,8 +147,8 @@ texture = ExtResource("5_4c57u")
 
 [node name="cola_fish" parent="Aquarium/fish_layer1" instance=ExtResource("4_1bvp3")]
 modulate = Color(0.7490196, 0.6509804, 0.28627452, 1)
-position = Vector2(834, 744)
-swim_speed = 1000
+position = Vector2(275, 731)
+swim_speed = 400
 anim_speed_scale = 3.5
 
 [node name="bg_layer_2" type="Node2D" parent="Aquarium"]
@@ -176,10 +179,10 @@ texture = ExtResource("5_efxa6")
 [node name="fish_layer2" type="Node2D" parent="Aquarium"]
 
 [node name="submarine" parent="Aquarium/fish_layer2" instance=ExtResource("4_1bvp3")]
-position = Vector2(775, 947)
-swim_speed = 600
+position = Vector2(749, 1006)
+fish_type = 3
+swim_speed = 122
 anim_speed_scale = 2.0
-fish_type = 2
 
 [node name="bg_layer_3" type="Node2D" parent="Aquarium"]
 position = Vector2(389.99988, 1036)
@@ -207,6 +210,11 @@ scale = Vector2(2.255476, 2.1964064)
 texture = ExtResource("5_efxa6")
 
 [node name="fish_layer3" type="Node2D" parent="Aquarium"]
+
+[node name="jellyfish2" parent="Aquarium/fish_layer3" instance=ExtResource("4_1bvp3")]
+position = Vector2(1332, 472)
+fish_type = 2
+swim_speed = 80
 
 [node name="train" type="Node2D" parent="Aquarium"]
 visible = false
@@ -314,9 +322,6 @@ position = Vector2(-727.79205, 485.67154)
 scale = Vector2(1.5857936, 1.4853768)
 texture = ExtResource("6_dg77c")
 
-[node name="Autorun_Train" type="Timer" parent="."]
-wait_time = 10.0
-
 [node name="Fish2" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(1487, 557)
@@ -324,4 +329,3 @@ texture = ExtResource("13_w48qg")
 script = ExtResource("14_vivmo")
 
 [connection signal="reached_target" from="Aquarium/fish_layer0/schooli" to="." method="_on_fish_reached_target"]
-[connection signal="timeout" from="Autorun_Train" to="." method="_on_timer_timeout"]

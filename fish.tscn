@@ -153,32 +153,6 @@ animations = [{
 "speed": 13.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_f8o1v"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("34_mf3od")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_f1p27")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_43uwq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_6luot")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_rht0h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("39_wgkqe")
-}],
-"loop": true,
-"name": &"default",
-"speed": 10.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1p27"]
 atlas = ExtResource("40_f1p27")
 region = Rect2(1, 1, 128, 128)
@@ -250,11 +224,37 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8o1v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_mf3od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_f1p27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_43uwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6luot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_rht0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_wgkqe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
 [node name="fish" type="Node2D"]
 script = ExtResource("1_jogki")
+wobble_radius = 50.0
 
 [node name="sprite_blinky" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 1)
 scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_f1p27")
 frame_progress = 0.36030427
@@ -266,15 +266,19 @@ scale = Vector2(0.703704, 0.703704)
 sprite_frames = SubResource("SpriteFrames_pfnr0")
 frame_progress = 0.05352963
 
-[node name="sprite_submarine" type="AnimatedSprite2D" parent="."]
-visible = false
-scale = Vector2(0.6014575, 0.6014575)
-sprite_frames = SubResource("SpriteFrames_f8o1v")
-frame_progress = 0.49762872
-
 [node name="sprite_jellyfish" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(0, -17)
 scale = Vector2(1.1596682, 1.1596682)
 sprite_frames = SubResource("SpriteFrames_m408n")
 frame_progress = 0.66495144
+
+[node name="sprite_submarine" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.6014575, 0.6014575)
+sprite_frames = SubResource("SpriteFrames_f8o1v")
+
+[node name="stop_idle_mode" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="stop_idle_mode" to="." method="_on_stop_idle_mode_timeout"]
