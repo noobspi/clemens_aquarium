@@ -6,12 +6,29 @@ var fish_scene = preload("res://fish.tscn")
 var fish_layer:Array[Node2D]
 
 
+## Switch game between Window and Fullscreen
+func toggle_fullscreen():
+	var current_mode = DisplayServer.window_get_mode()
+	if current_mode == DisplayServer.WINDOW_MODE_FULLSCREEN:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+
+## Returns a rnd point on the screen/viewport. Hopefully within the aquarium
+func _get_random_point_in_aquarium() -> Vector2:
+	var MARGIN:int = 200
+	var viewport_size: Vector2 = get_viewport_rect().size
+	var random_x: float = randf_range(0 + MARGIN, viewport_size.x - MARGIN)
+	var random_y: float = randf_range(0 + MARGIN, viewport_size.y - MARGIN)
+	return Vector2(random_x, random_y)
+
 
 ## removes EVERY node(fish) from EVERY fish-layer
 func clear_aquarium():
 	for fl in fish_layer:
 		for f in fl.get_children():
 			f.queue_free()	# delete and remove this node/fish from node-tree
+
 
 ## Returns a rnd fish name
 func get_random_fish_name() -> String:
@@ -25,6 +42,7 @@ func get_random_fish_name() -> String:
 	var random_index = randi_range(0, fish_names.size() - 1)
 	return fish_names[random_index].capitalize()
 
+
 ## Returns all fish in the aquarium
 func get_all_fish() -> Array[Fish]:
 	var all_fish:Array[Fish] = []
@@ -32,6 +50,7 @@ func get_all_fish() -> Array[Fish]:
 		for f in fl.get_children():
 			all_fish.append(f as Fish)		# collect all fishes
 	return all_fish
+
 
 ## Return a rnd fish from a rnd layer. Null, if aquarium  is empty
 func get_random_fish() -> Fish:
@@ -42,15 +61,6 @@ func get_random_fish() -> Fish:
 	var rnd_fish = all_fish[rnd_idx] as Fish
 	print("Picked random fish <%s>" % rnd_fish.name)
 	return rnd_fish
-
-
-## Returns a rnd point on the screen / viewport
-func _get_random_point_in_aquarium() -> Vector2:
-	var MARGIN:int = 200
-	var viewport_size: Vector2 = get_viewport_rect().size
-	var random_x: float = randf_range(0 + MARGIN, viewport_size.x - MARGIN)
-	var random_y: float = randf_range(0 + MARGIN, viewport_size.y - MARGIN)
-	return Vector2(random_x, random_y)
 
 
 ## Creates a new fish of TYPE (sprite) at position POS. Adds the new fish to the fish_layer[layer]
@@ -114,6 +124,8 @@ func _input(event: InputEvent) -> void:
 				create_rnd_fish(get_global_mouse_position())
 			elif kc == Key.KEY_E:
 				start_easter_egg()
+			elif kc == Key.KEY_F:
+				toggle_fullscreen()
 			elif event.keycode == Key.KEY_C:
 				print("Clean house")
 				clear_aquarium()				
