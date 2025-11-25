@@ -72,8 +72,8 @@ func create_fish(pos:Vector2, type:Fish.FishType, layer:int = 0) -> Fish:
 
 ## Creates a rnd fish on a rnd layer at global_position
 func create_rnd_fish(global_pos:Vector2):
-	var rnd_type = randi_range(0, Fish.FishType.keys().size() - 2) as Fish.FishType
-	var rnd_layer = randi_range(0, fish_layer.size() - 1)	
+	var rnd_type = randi_range(0, Fish.FishType.keys().size() - 1) as Fish.FishType
+	var rnd_layer = randi_range(0, fish_layer.size() - 1)
 	var new_fish = create_fish(global_pos, rnd_type, rnd_layer)
 	new_fish.connect("reached_target", _on_fish_reached_target)	
 

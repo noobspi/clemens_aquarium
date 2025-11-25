@@ -66,7 +66,7 @@ var wooble_global_center: Vector2 = Vector2.ZERO
 @export var debug_ai: bool = false
 func print_ai (s: String) -> void:
 	if debug_ai:
-		print("🤖 " + s)
+		print("🐟 " + s)
 
 
 
@@ -78,16 +78,15 @@ func get_random_point_in_aquarium() -> Vector2i:
 	return Vector2i(random_x, random_y)
 
 
-## Reset the idle timer to a rnd time, or disables timer in godot-editor amd  for submarines
+## Reset the idle timer to a rnd time, or disables timer in godot-editor
 func reset_idle_timer():
 	if Engine.is_editor_hint():			# dont swim in the editor-window ;)
 		idle_timer.stop()
 	else:
-		if fish_type != FishType.Submarine:	# submarines don't hunt rnd targets
-			var t:float = randf_range(IDLE_TIME_MIN, IDLE_TIME_MAX)
-			print_ai("<%s> Restart idle-timer to %.1f sec" % [name, t])
-			idle_timer.wait_time = t
-			idle_timer.start()
+		var t:float = randf_range(IDLE_TIME_MIN, IDLE_TIME_MAX)
+		print_ai("<%s> Restart idle-timer to 🎲 %.1f sec" % [name, t])
+		idle_timer.wait_time = t
+		idle_timer.start()
 
 
 ## Setup animated-sprites: which fish to display? disable all other fish-types (sprites)
@@ -239,9 +238,10 @@ func idle_mode(delta:float) -> void:
 	# 	sprite.position.x -= swim_speed * delta
 
 ## stop idle-mode: What's next? 33% Wooble, 33% Idle again, 33% Swim-to
+## Submarine is different: it won't catch a virtual target on its own 
 func _on_stop_idle_mode_timeout() -> void:
 	var dice: float = randf()	# roll a dice
-	if dice < 0.5:
+	if dice < 0.5 or fish_type == FishType.Submarine:
 		print_ai("<%s> ⏰ STOPPED idle-mode, now 🎲 IDLE again" % [name])
 		ai_current_state = AiState.IdleUndecided
 		look_left()
