@@ -265,12 +265,11 @@ func _ready() -> void:
 	else:
 		ai_current_state = AiState.IdleSwimRight
 		look_right()
-	print_ai("<%s> is born, now %s" % [name, str(AiState.keys()[ai_current_state])])
+	print_ai("<%s> is born, now 🎲 %s" % [name, str(AiState.keys()[ai_current_state])])
 
 
-	# Store the initial position as the center
+	# Store the initial params for woobling around a center with 2 sin
 	wooble_global_center = global_position
-	# Initialize angles to a random value to avoid synchronized starts
 	wooble_current_angle_x = randf_range(0.0, TAU)
 	wooble_current_angle_y = randf_range(0.0, TAU)
 

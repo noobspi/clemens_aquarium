@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c7cpgkmvkjp54"]
+[gd_scene load_steps=35 format=3 uid="uid://c7cpgkmvkjp54"]
 
 [ext_resource type="Script" uid="uid://dmtq4640bkxss" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cgdlbgcolgeic" path="res://assets/bg/bg1.jpg" id="2_h2yge"]
@@ -14,12 +14,133 @@
 [ext_resource type="Texture2D" uid="uid://cfkuhk68yxkn8" path="res://eegg/train_track.png" id="12_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://bllwmxybj8g2w" path="res://assets/fauna/fish2.png" id="13_w48qg"]
 [ext_resource type="Script" uid="uid://b22sye3mwxswo" path="res://fish_2.gd" id="14_vivmo"]
+[ext_resource type="Texture2D" uid="uid://ckc4333xi6awy" path="res://assets/fauna/pirate_ship_1.png" id="15_vivmo"]
+[ext_resource type="Texture2D" uid="uid://i1ut236sh756" path="res://assets/blubber_spritesheet.png" id="16_2cqfq"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2cqfq"]
+particles_animation = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 2
+particles_anim_loop = true
 
 [sub_resource type="Curve2D" id="Curve2D_efxa6"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -254, -43, -241.56793, 42.675972, 241.56793, -42.675972, 1126, -94, 146.35767, 312.477, -146.35767, -312.477, 1572, -469, 138.7322, -208.55304, -138.7322, 208.55304, 985, -337, -107.12218, 384.00717, 107.12218, -384.00717, 345, -487, -156.9668, 18.072613, 156.9668, -18.072613, 914, -915, -195.47247, 21.465954, 195.47247, -21.465954, 1533, -871, -82.3645, 201.0328, 82.3645, -201.0328, 1938, -1189)
 }
 point_count = 8
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yaehf"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(4, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_074og"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(117, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cegan"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(230, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82xsv"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(343, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_getpj"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(456, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryguw"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(569, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d13ii"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(682, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u8w0"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(795, 6, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0odxb"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(4, 128, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lswn8"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(117, 128, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6jrf"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(230, 128, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuqvo"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(343, 128, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsp4k"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(456, 128, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq58d"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(569, 128, 106, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_seu75"]
+atlas = ExtResource("16_2cqfq")
+region = Rect2(682, 128, 106, 119)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_htxhm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yaehf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_074og")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cegan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_getpj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryguw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d13ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1u8w0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0odxb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lswn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6jrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xuqvo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsp4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq58d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_seu75")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_0xm2m")
@@ -90,6 +211,22 @@ position = Vector2(1579.5616, 567.97644)
 scale = Vector2(0.49348173, 0.67205477)
 texture = ExtResource("5_4c57u")
 
+[node name="Blubber" type="CPUParticles2D" parent="Aquarium/bg_layer_0"]
+self_modulate = Color(1, 1, 1, 0.54901963)
+material = SubResource("CanvasItemMaterial_2cqfq")
+position = Vector2(753, 797)
+amount = 15
+texture = ExtResource("16_2cqfq")
+lifetime = 6.0
+randomness = 0.34
+lifetime_randomness = 0.56
+emission_shape = 3
+emission_rect_extents = Vector2(80, 20)
+gravity = Vector2(0, -50)
+anim_speed_min = 0.2
+anim_speed_max = 1.0
+anim_offset_max = 0.1031
+
 [node name="fish_layer0" type="Node2D" parent="Aquarium"]
 
 [node name="blinky" parent="Aquarium/fish_layer0" instance=ExtResource("4_1bvp3")]
@@ -108,6 +245,7 @@ debug_ai = true
 position = Vector2(820, 283)
 fish_type = 2
 swim_speed = 50
+debug_ai = true
 
 [node name="bg_layer_1" type="Node2D" parent="Aquarium"]
 
@@ -172,17 +310,23 @@ texture = ExtResource("7_ycdy4")
 
 [node name="Algea14" type="Sprite2D" parent="Aquarium/bg_layer_2"]
 self_modulate = Color(0.48473388, 0.6400672, 0.25210685, 1)
-position = Vector2(67.87689, 443.2857)
+position = Vector2(367.6669, 303.7655)
 scale = Vector2(1.1114577, 1.0023695)
 texture = ExtResource("5_efxa6")
 
+[node name="PirateShip1" type="Sprite2D" parent="Aquarium/bg_layer_2"]
+position = Vector2(759.8452, 68.877174)
+rotation = -0.58963245
+scale = Vector2(0.9231256, 0.86467075)
+texture = ExtResource("15_vivmo")
+
 [node name="fish_layer2" type="Node2D" parent="Aquarium"]
 
-[node name="submarine" parent="Aquarium/fish_layer2" instance=ExtResource("4_1bvp3")]
-position = Vector2(749, 1006)
-fish_type = 3
-swim_speed = 122
-anim_speed_scale = 2.0
+[node name="jellyfish2" parent="Aquarium/fish_layer2" instance=ExtResource("4_1bvp3")]
+position = Vector2(1332, 472)
+fish_type = 2
+swim_speed = 80
+debug_ai = true
 
 [node name="bg_layer_3" type="Node2D" parent="Aquarium"]
 position = Vector2(389.99988, 1036)
@@ -211,10 +355,12 @@ texture = ExtResource("5_efxa6")
 
 [node name="fish_layer3" type="Node2D" parent="Aquarium"]
 
-[node name="jellyfish2" parent="Aquarium/fish_layer3" instance=ExtResource("4_1bvp3")]
-position = Vector2(1332, 472)
-fish_type = 2
-swim_speed = 80
+[node name="submarine" parent="Aquarium/fish_layer3" instance=ExtResource("4_1bvp3")]
+position = Vector2(761, 974)
+fish_type = 3
+swim_speed = 122
+anim_speed_scale = 2.0
+debug_ai = true
 
 [node name="train" type="Node2D" parent="Aquarium"]
 visible = false
@@ -327,5 +473,10 @@ visible = false
 position = Vector2(1487, 557)
 texture = ExtResource("13_w48qg")
 script = ExtResource("14_vivmo")
+
+[node name="blubber" type="AnimatedSprite2D" parent="."]
+position = Vector2(1809, 224.00002)
+scale = Vector2(1.9716982, 1.9716982)
+sprite_frames = SubResource("SpriteFrames_htxhm")
 
 [connection signal="reached_target" from="Aquarium/fish_layer0/schooli" to="." method="_on_fish_reached_target"]
