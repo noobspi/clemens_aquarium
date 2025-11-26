@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc3wphce0oh8i"
-path="res://.godot/imported/comic_gedankenblase_1.png-1ffe5d5a4cb8a6894667a258014fafa3.ctex"
+uid="uid://s3brqwunc4bn"
+path="res://.godot/imported/coral1.png-ed63401b0023b0e42d4847b7a2df473b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/comic_gedankenblase_1.png"
-dest_files=["res://.godot/imported/comic_gedankenblase_1.png-1ffe5d5a4cb8a6894667a258014fafa3.ctex"]
+source_file="res://assets/flora/coral1.png"
+dest_files=["res://.godot/imported/coral1.png-ed63401b0023b0e42d4847b7a2df473b.ctex"]
 
 [params]
 

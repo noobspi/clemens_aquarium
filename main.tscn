@@ -1,22 +1,29 @@
-[gd_scene load_steps=20 format=3 uid="uid://c7cpgkmvkjp54"]
+[gd_scene load_steps=27 format=3 uid="uid://c7cpgkmvkjp54"]
 
 [ext_resource type="Script" uid="uid://dmtq4640bkxss" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cgdlbgcolgeic" path="res://assets/bg/bg1.jpg" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bdhhw2jxry3hi" path="res://assets/bg/aquarium_bg_folie1.png" id="3_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://bxi0uq1exglrm" path="res://assets/flora/stone2.png" id="3_kek77"]
 [ext_resource type="PackedScene" uid="uid://6olh8im6dyai" path="res://fish.tscn" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://be1l047yi00qv" path="res://assets/flora/ston1.png" id="4_4c57u"]
+[ext_resource type="Texture2D" uid="uid://b4a87n85xb2jy" path="res://assets/flora/coral8.png" id="4_d13ii"]
+[ext_resource type="Texture2D" uid="uid://17xcebhanhbe" path="res://assets/flora/coral6.png" id="5_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://chu40lpr51ala" path="res://assets/flora/algea2.png" id="5_4c57u"]
 [ext_resource type="Texture2D" uid="uid://b3ovx12ecyv8b" path="res://assets/flora/algea1.png" id="5_efxa6"]
 [ext_resource type="Texture2D" uid="uid://b2prg4gu4t3it" path="res://assets/flora/stone_algea1.png" id="6_dg77c"]
 [ext_resource type="Texture2D" uid="uid://xclpgmc3ia8" path="res://assets/flora/aloevera1.png" id="7_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://bv4p4fm5uln7p" path="res://assets/flora/coral7.png" id="9_82xsv"]
 [ext_resource type="Texture2D" uid="uid://cj8mgq566as3r" path="res://eegg/steam_train.png" id="11_dg77c"]
 [ext_resource type="PackedScene" uid="uid://cm3jxb3bpthyy" path="res://diver.tscn" id="11_yaehf"]
 [ext_resource type="Texture2D" uid="uid://c6tq32wbv71o" path="res://eegg/steam_train_2.png" id="11_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://btlj8f7am5hso" path="res://assets/flora/coral3.png" id="12_ryguw"]
 [ext_resource type="Texture2D" uid="uid://cfkuhk68yxkn8" path="res://eegg/train_track.png" id="12_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://bllwmxybj8g2w" path="res://assets/fauna/fish2.png" id="13_w48qg"]
 [ext_resource type="Script" uid="uid://b22sye3mwxswo" path="res://fish_2.gd" id="14_vivmo"]
 [ext_resource type="Texture2D" uid="uid://ckc4333xi6awy" path="res://assets/fauna/pirate_ship_1.png" id="15_vivmo"]
 [ext_resource type="Texture2D" uid="uid://i1ut236sh756" path="res://assets/blubber_spritesheet.png" id="16_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://crx85w07j0jxl" path="res://assets/flora/coral5.png" id="18_ryguw"]
+[ext_resource type="Texture2D" uid="uid://dbaidphh58u10" path="res://assets/flora/coral2.png" id="20_d13ii"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2cqfq"]
 particles_animation = true
@@ -34,18 +41,24 @@ point_count = 8
 script = ExtResource("1_0xm2m")
 
 [node name="BG-Folie" type="Node2D" parent="."]
-visible = false
 
 [node name="water" type="Sprite2D" parent="BG-Folie"]
+visible = false
 position = Vector2(952.9999, 543.99976)
 scale = Vector2(3.2516341, 3.5294127)
 texture = ExtResource("2_h2yge")
 
 [node name="water_effect" type="Sprite2D" parent="BG-Folie"]
+visible = false
 modulate = Color(1, 1, 1, 0.20784314)
 position = Vector2(953.7498, 552.49963)
 scale = Vector2(3.258988, 3.5634694)
 texture = ExtResource("2_h2yge")
+
+[node name="AquariumBgFolie1" type="Sprite2D" parent="BG-Folie"]
+position = Vector2(1318, 419)
+scale = Vector2(3.3473742, 3.3473744)
+texture = ExtResource("3_1u8w0")
 
 [node name="Aquarium" type="Node2D" parent="."]
 
@@ -57,9 +70,21 @@ position = Vector2(1474, 426.00003)
 scale = Vector2(0.54404217, 0.840338)
 texture = ExtResource("5_efxa6")
 
+[node name="Coral8" type="Sprite2D" parent="Aquarium/bg_layer_0"]
+self_modulate = Color(0.88235295, 0.38431373, 0.8352941, 1)
+position = Vector2(1103, 575)
+scale = Vector2(1.0742188, 1.1875)
+texture = ExtResource("4_d13ii")
+
+[node name="Coral6" type="Sprite2D" parent="Aquarium/bg_layer_0"]
+self_modulate = Color(0.53514206, 0.5517922, 0.9999953, 1)
+position = Vector2(963.00006, 460.00003)
+scale = Vector2(0.36934203, 0.61367315)
+texture = ExtResource("5_1u8w0")
+
 [node name="Algea12" type="Sprite2D" parent="Aquarium/bg_layer_0"]
 self_modulate = Color(0, 0.4509804, 0.25882354, 0.95686275)
-position = Vector2(1073, 560)
+position = Vector2(1054, 561)
 scale = Vector2(0.53765845, 0.54882026)
 texture = ExtResource("5_4c57u")
 
@@ -128,6 +153,11 @@ debug_ai = true
 
 [node name="bg_layer_1" type="Node2D" parent="Aquarium"]
 
+[node name="Coral5" type="Sprite2D" parent="Aquarium/bg_layer_1"]
+position = Vector2(1039, 706.00006)
+scale = Vector2(0.597561, 0.745)
+texture = ExtResource("18_ryguw")
+
 [node name="Algea4" type="Sprite2D" parent="Aquarium/bg_layer_1"]
 self_modulate = Color(0.20784314, 0.6039216, 0.40784314, 1)
 position = Vector2(395, 688)
@@ -160,23 +190,28 @@ position = Vector2(45.000122, 989.00006)
 scale = Vector2(0.3062246, 0.123983696)
 texture = ExtResource("5_4c57u")
 
+[node name="Coral7" type="Sprite2D" parent="Aquarium/bg_layer_1"]
+position = Vector2(933, 1054)
+scale = Vector2(0.4257812, 0.41071433)
+texture = ExtResource("9_82xsv")
+
 [node name="diver" parent="Aquarium/bg_layer_1" instance=ExtResource("11_yaehf")]
 position = Vector2(710, 957)
 
 [node name="oxygen_bubbles" type="CPUParticles2D" parent="Aquarium/bg_layer_1"]
 self_modulate = Color(1, 1, 1, 0.54901963)
 material = SubResource("CanvasItemMaterial_2cqfq")
-position = Vector2(738, 780)
+position = Vector2(672, 727)
 amount = 15
 texture = ExtResource("16_2cqfq")
 lifetime = 6.0
 randomness = 0.34
 lifetime_randomness = 0.56
 emission_shape = 3
-emission_rect_extents = Vector2(100, 20)
+emission_rect_extents = Vector2(80, 20)
 gravity = Vector2(0, -50)
 scale_amount_max = 2.0
-anim_speed_min = 0.2
+anim_speed_min = 1.0
 anim_speed_max = 1.0
 anim_offset_max = 0.1031
 
@@ -186,6 +221,11 @@ rotation = -0.62022704
 scale = Vector2(0.50006735, 0.4802271)
 skew = 0.060435414
 texture = ExtResource("15_vivmo")
+
+[node name="Coral3" type="Sprite2D" parent="Aquarium/bg_layer_1"]
+position = Vector2(129, 948)
+scale = Vector2(1.0721925, 1.0387756)
+texture = ExtResource("12_ryguw")
 
 [node name="fish_layer1" type="Node2D" parent="Aquarium"]
 
@@ -249,7 +289,7 @@ scale = Vector2(1.4413785, 1.4413784)
 texture = ExtResource("7_ycdy4")
 
 [node name="Algea9" type="Sprite2D" parent="Aquarium/bg_layer_3"]
-position = Vector2(6903.4443, -337.93115)
+position = Vector2(7062.7554, -357.2412)
 scale = Vector2(2.255476, 2.1964064)
 texture = ExtResource("5_efxa6")
 
@@ -322,30 +362,15 @@ position = Vector2(1512.1482, 607.531)
 scale = Vector2(0.3114058, 0.110678956)
 texture = ExtResource("5_4c57u")
 
-[node name="Algea2" type="Sprite2D" parent="Aquarium/bg_layer_4"]
-position = Vector2(1297.2043, 535.1217)
-scale = Vector2(0.57737786, 0.21896492)
-texture = ExtResource("5_4c57u")
-
 [node name="Algea6" type="Sprite2D" parent="Aquarium/bg_layer_4"]
-position = Vector2(1086.0317, 559.8468)
+position = Vector2(207.40186, 581.03973)
 scale = Vector2(0.5343112, 0.17738552)
 texture = ExtResource("5_4c57u")
 
-[node name="Algea4" type="Sprite2D" parent="Aquarium/bg_layer_4"]
-position = Vector2(1048.3223, 543.95215)
-scale = Vector2(0.639951, 0.59942746)
-texture = ExtResource("5_efxa6")
-
 [node name="Algea7" type="Sprite2D" parent="Aquarium/bg_layer_4"]
-position = Vector2(987.98706, 611.0631)
-scale = Vector2(0.3114058, 0.110678986)
+position = Vector2(-1077.4146, 497.64767)
+scale = Vector2(0.29637906, 0.27228543)
 texture = ExtResource("5_4c57u")
-
-[node name="Algea5" type="Sprite2D" parent="Aquarium/bg_layer_4"]
-position = Vector2(1221.7856, 581.0398)
-scale = Vector2(0.5018675, 0.44458747)
-texture = ExtResource("5_efxa6")
 
 [node name="Algea1" type="Sprite2D" parent="Aquarium/bg_layer_4"]
 self_modulate = Color(0.90588236, 0.90588236, 0.007843138, 1)
@@ -367,6 +392,21 @@ texture = ExtResource("6_dg77c")
 position = Vector2(-727.79205, 485.67154)
 scale = Vector2(1.5857936, 1.4853768)
 texture = ExtResource("6_dg77c")
+
+[node name="Coral5" type="Sprite2D" parent="Aquarium/bg_layer_4"]
+position = Vector2(-856.0043, 665.8114)
+scale = Vector2(0.4455899, 0.31190327)
+texture = ExtResource("18_ryguw")
+
+[node name="Coral2" type="Sprite2D" parent="Aquarium/bg_layer_4"]
+position = Vector2(1234.9836, 552.7826)
+scale = Vector2(1.6852014, 1.5784897)
+texture = ExtResource("20_d13ii")
+
+[node name="Algea4" type="Sprite2D" parent="Aquarium/bg_layer_4"]
+position = Vector2(1046.4368, 551.0165)
+scale = Vector2(0.639951, 0.59942746)
+texture = ExtResource("5_efxa6")
 
 [node name="Fish2" type="Sprite2D" parent="."]
 visible = false
