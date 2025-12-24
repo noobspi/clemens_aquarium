@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://6olh8im6dyai"]
+[gd_scene load_steps=81 format=3 uid="uid://6olh8im6dyai"]
 
 [ext_resource type="Script" uid="uid://43dqagiew4se" path="res://fish.gd" id="1_jogki"]
 [ext_resource type="Texture2D" uid="uid://do733dv3h1jg3" path="res://assets/fauna/anim_fish3/fish3_000.png" id="2_f1p27"]
@@ -22,17 +22,29 @@
 [ext_resource type="Texture2D" uid="uid://bng2nhco2y3t0" path="res://assets/fauna/anim_fish3/fish3_018.png" id="20_1old1"]
 [ext_resource type="Texture2D" uid="uid://c6atnf2ykaxkm" path="res://assets/fauna/anim_fish3/fish3_019.png" id="21_je0xk"]
 [ext_resource type="Texture2D" uid="uid://c6u6dsd8bod2u" path="res://assets/fauna/anim_fish2/fish2_000.png" id="22_ob5m5"]
+[ext_resource type="Texture2D" uid="uid://gg4six0orkf3" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_000.png" id="23_mhr8l"]
 [ext_resource type="Texture2D" uid="uid://bq24xhnfbhrgu" path="res://assets/fauna/anim_fish2/fish2_001.png" id="23_u8ci7"]
+[ext_resource type="Texture2D" uid="uid://csy7noio0e50m" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_001.png" id="24_7eesx"]
 [ext_resource type="Texture2D" uid="uid://c3h41x2j3hs7f" path="res://assets/fauna/anim_fish2/fish2_002.png" id="24_so8t6"]
+[ext_resource type="Texture2D" uid="uid://ci3o1xtoyyu5m" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_002.png" id="25_3xqcr"]
 [ext_resource type="Texture2D" uid="uid://x0p57ik64ydp" path="res://assets/fauna/anim_fish2/fish2_003.png" id="25_f88oc"]
 [ext_resource type="Texture2D" uid="uid://dhkhbympd6sji" path="res://assets/fauna/anim_fish2/fish2_004.png" id="26_lh0us"]
+[ext_resource type="Texture2D" uid="uid://b22bddcd6iw47" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_003.png" id="26_teadc"]
 [ext_resource type="Texture2D" uid="uid://clkh7h1iot161" path="res://assets/fauna/anim_fish2/fish2_005.png" id="27_m82ql"]
+[ext_resource type="Texture2D" uid="uid://h3e7qm4tocm0" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_004.png" id="27_uuhps"]
+[ext_resource type="Texture2D" uid="uid://d3i1ivtwr3y8l" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_005.png" id="28_1old1"]
 [ext_resource type="Texture2D" uid="uid://ck1v57iwp6ly7" path="res://assets/fauna/anim_fish2/fish2_006.png" id="28_mf3od"]
 [ext_resource type="Texture2D" uid="uid://di6vgb4q6d0ei" path="res://assets/fauna/anim_fish2/fish2_007.png" id="29_f1p27"]
+[ext_resource type="Texture2D" uid="uid://cjgailbkw0ii0" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_006.png" id="29_je0xk"]
+[ext_resource type="Texture2D" uid="uid://b63d2jhtn78va" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_007.png" id="30_4v43i"]
 [ext_resource type="Texture2D" uid="uid://boijmqk1ghodr" path="res://assets/fauna/anim_fish2/fish2_008.png" id="30_43uwq"]
 [ext_resource type="Texture2D" uid="uid://bbd8xsugkrloa" path="res://assets/fauna/anim_fish2/fish2_009.png" id="31_6luot"]
+[ext_resource type="Texture2D" uid="uid://cohfujpbfpest" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_008.png" id="31_fnyr7"]
+[ext_resource type="Texture2D" uid="uid://bg8xbbnba6s4u" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_009.png" id="32_f7gvg"]
 [ext_resource type="Texture2D" uid="uid://baehrsvtii2tn" path="res://assets/fauna/anim_fish2/fish2_010.png" id="32_rht0h"]
+[ext_resource type="Texture2D" uid="uid://bmmwnepici6ml" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_010.png" id="33_ar1qx"]
 [ext_resource type="Texture2D" uid="uid://cor81cxp3hrj0" path="res://assets/fauna/anim_fish2/fish2_011.png" id="33_wgkqe"]
+[ext_resource type="Texture2D" uid="uid://dakrqyo2gid18" path="res://assets/xmas_special/xmas_schoolfish/xmas_fish2_011.png" id="34_i78kq"]
 [ext_resource type="Texture2D" uid="uid://cah3afsakx2eb" path="res://assets/fauna/yellow_submarine/yellow_submarine_00.png" id="34_mf3od"]
 [ext_resource type="Texture2D" uid="uid://b3ofqcf4nwtyf" path="res://assets/fauna/yellow_submarine/yellow_submarine_01.png" id="35_f1p27"]
 [ext_resource type="Texture2D" uid="uid://cxcif2ak1i6as" path="res://assets/fauna/yellow_submarine/yellow_submarine_02.png" id="36_43uwq"]
@@ -40,6 +52,61 @@
 [ext_resource type="Texture2D" uid="uid://b85mo2ur1sgh8" path="res://assets/fauna/yellow_submarine/yellow_submarine_04.png" id="38_rht0h"]
 [ext_resource type="Texture2D" uid="uid://dlt4p0hm3yc3n" path="res://assets/fauna/yellow_submarine/yellow_submarine_05.png" id="39_wgkqe"]
 [ext_resource type="Texture2D" uid="uid://hynmgtxy3eos" path="res://assets/fauna/jellyfish_atlas.png" id="40_f1p27"]
+[ext_resource type="Texture2D" uid="uid://dv3wyyrbyvj60" path="res://assets/fauna/fish4_spritesheet.png" id="41_43uwq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqt10"]
+atlas = ExtResource("41_43uwq")
+region = Rect2(3, 0, 109, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m408n"]
+atlas = ExtResource("41_43uwq")
+region = Rect2(112, 0, 109, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwt7x"]
+atlas = ExtResource("41_43uwq")
+region = Rect2(221, 0, 109, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wc0m"]
+atlas = ExtResource("41_43uwq")
+region = Rect2(330, 0, 109, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhr8l"]
+atlas = ExtResource("41_43uwq")
+region = Rect2(439, 0, 109, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7eesx"]
+atlas = ExtResource("41_43uwq")
+region = Rect2(548, 0, 109, 82)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3xqcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqt10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m408n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwt7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wc0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mhr8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7eesx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_43uwq"]
+radius = 30.0
+height = 88.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f1p27"]
 animations = [{
@@ -109,6 +176,53 @@ animations = [{
 "speed": 20.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43uwq"]
+size = Vector2(177.85916, 109.71828)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yv2yc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_mhr8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_7eesx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3xqcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_teadc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_uuhps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_1old1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_je0xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4v43i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_fnyr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_f7gvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ar1qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_i78kq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_pfnr0"]
 animations = [{
 "frames": [{
@@ -152,6 +266,10 @@ animations = [{
 "name": &"default",
 "speed": 13.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6luot"]
+radius = 55.0
+height = 178.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1p27"]
 atlas = ExtResource("40_f1p27")
@@ -224,6 +342,10 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rht0h"]
+radius = 43.0
+height = 142.0
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_f8o1v"]
 animations = [{
 "frames": [{
@@ -250,35 +372,99 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wgkqe"]
+radius = 16.0
+height = 86.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pfnr0"]
+radius = 38.0
+height = 238.0
+
 [node name="fish" type="Node2D"]
 script = ExtResource("1_jogki")
 wobble_radius = 50.0
 
-[node name="sprite_blinky" type="AnimatedSprite2D" parent="."]
+[node name="stop_idle_mode" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="coralfish" type="Area2D" parent="."]
+visible = false
+
+[node name="sprite_coralfish" type="AnimatedSprite2D" parent="coralfish"]
+position = Vector2(-4.7683716e-07, -9.536743e-07)
+scale = Vector2(0.8658536, 0.86585367)
+sprite_frames = SubResource("SpriteFrames_3xqcr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coralfish"]
+visible = false
+position = Vector2(1, 1)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_43uwq")
+
+[node name="blinky" type="Area2D" parent="."]
+
+[node name="sprite_blinky" type="AnimatedSprite2D" parent="blinky"]
 scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_f1p27")
-frame_progress = 0.36030427
+frame_progress = 0.085505955
 
-[node name="sprite_schoolfish" type="AnimatedSprite2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="blinky"]
 visible = false
-position = Vector2(-1.52588e-05, 2)
+position = Vector2(1.0000019, -0.5)
+scale = Vector2(0.8658536, 0.86585385)
+shape = SubResource("RectangleShape2D_43uwq")
+
+[node name="schoolfish" type="Area2D" parent="."]
+visible = false
+
+[node name="xmas_schoolfish" type="AnimatedSprite2D" parent="schoolfish"]
+position = Vector2(1.5258789e-05, 3.8146973e-06)
+scale = Vector2(0.5111111, 0.51111114)
+sprite_frames = SubResource("SpriteFrames_yv2yc")
+
+[node name="sprite_schoolfish" type="AnimatedSprite2D" parent="schoolfish"]
+visible = false
+position = Vector2(-11, -2)
 scale = Vector2(0.703704, 0.703704)
 sprite_frames = SubResource("SpriteFrames_pfnr0")
 frame_progress = 0.05352963
 
-[node name="sprite_jellyfish" type="AnimatedSprite2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="schoolfish"]
 visible = false
+position = Vector2(-14, 7)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_6luot")
+
+[node name="jellyfish" type="Area2D" parent="."]
+visible = false
+
+[node name="sprite_jellyfish" type="AnimatedSprite2D" parent="jellyfish"]
 position = Vector2(0, -17)
 scale = Vector2(1.1596682, 1.1596682)
 sprite_frames = SubResource("SpriteFrames_m408n")
-frame_progress = 0.66495144
+frame_progress = 0.34510875
 
-[node name="sprite_submarine" type="AnimatedSprite2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jellyfish"]
 visible = false
+position = Vector2(0, -17)
+shape = SubResource("CapsuleShape2D_rht0h")
+
+[node name="submarine" type="Area2D" parent="."]
+visible = false
+
+[node name="sprite_submarine" type="AnimatedSprite2D" parent="submarine"]
 scale = Vector2(0.6014575, 0.6014575)
 sprite_frames = SubResource("SpriteFrames_f8o1v")
 
-[node name="stop_idle_mode" type="Timer" parent="."]
-wait_time = 10.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="submarine"]
+visible = false
+position = Vector2(15, -27)
+shape = SubResource("CapsuleShape2D_wgkqe")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="submarine"]
+visible = false
+position = Vector2(1, 28)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_pfnr0")
 
 [connection signal="timeout" from="stop_idle_mode" to="." method="_on_stop_idle_mode_timeout"]

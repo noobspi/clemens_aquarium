@@ -1,7 +1,13 @@
-[gd_scene load_steps=17 format=3 uid="uid://cm3jxb3bpthyy"]
+[gd_scene load_steps=24 format=3 uid="uid://cm3jxb3bpthyy"]
 
 [ext_resource type="Script" uid="uid://dbepni5oxerqy" path="res://diver.gd" id="1_37drl"]
 [ext_resource type="Texture2D" uid="uid://5dbbol4o3hxx" path="res://assets/diver_spriteshett.png" id="1_dtn13"]
+[ext_resource type="Texture2D" uid="uid://dtqmhlp322qgc" path="res://assets/xmas_special/angel/anime_angel_000.png" id="3_bqexv"]
+[ext_resource type="Texture2D" uid="uid://b0nvslni3mrlu" path="res://assets/xmas_special/angel/anime_angel_001.png" id="4_0iw65"]
+[ext_resource type="Texture2D" uid="uid://yviv7npuvgoa" path="res://assets/xmas_special/angel/anime_angel_002.png" id="5_7pn6h"]
+[ext_resource type="Texture2D" uid="uid://3i3uymmuxa57" path="res://assets/xmas_special/angel/anime_angel_003.png" id="6_tft6b"]
+[ext_resource type="Texture2D" uid="uid://dvh4jq3jhqlka" path="res://assets/xmas_special/angel/anime_angel_004.png" id="7_0qu6q"]
+[ext_resource type="Texture2D" uid="uid://bufuukawvxc16" path="res://assets/xmas_special/angel/anime_angel_005.png" id="8_ebf4t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_37drl"]
 atlas = ExtResource("1_dtn13")
@@ -81,29 +87,38 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_dtn13"]
-resource_name = "UpDown"
-length = 30.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 8.033334, 14.466666, 15.633333, 16.633333, 22.133333, 30.166666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, -800), Vector2(0, -700), Vector2(0, -800), Vector2(0, 0), Vector2(0, 0)]
-}
+[sub_resource type="SpriteFrames" id="SpriteFrames_7b7tp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_bqexv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0iw65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7pn6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tft6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0qu6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ebf4t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_37drl"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/path = NodePath("angel:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -111,6 +126,35 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dtn13"]
+resource_name = "UpDown"
+length = 30.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath("diver:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6.766667, 14.466666, 15.633333, 16.633333, 22.633333, 29.966667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, -800), Vector2(0, -750), Vector2(0, -800), Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("angel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.03333333, 3.4333334, 14.533334, 15.733334, 16.633333, 24.133333, 30.033333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, -800), Vector2(0, -750), Vector2(0, -800), Vector2(0, 0), Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8nn5s"]
@@ -122,11 +166,18 @@ _data = {
 [node name="diver" type="Node2D"]
 script = ExtResource("1_37drl")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.24411766, 0.24411766)
+[node name="diver" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.2936383, 0.3327941)
 sprite_frames = SubResource("SpriteFrames_0qu6q")
+autoplay = "default"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="angel" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.3970588, 1.3970588)
+sprite_frames = SubResource("SpriteFrames_7b7tp")
+autoplay = "default"
+frame_progress = 0.0063775214
+
+[node name="animation" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_8nn5s")
 }

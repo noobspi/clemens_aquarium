@@ -1,5 +1,6 @@
 extends Node2D
 
 func _ready() -> void:
-	$AnimatedSprite2D.play()
-	$AnimationPlayer.play("UpDown")
+	# $diver.play()
+	# $angel.play()
+	$animation.play("UpDown")

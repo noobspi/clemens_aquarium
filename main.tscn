@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://c7cpgkmvkjp54"]
+[gd_scene load_steps=40 format=3 uid="uid://c7cpgkmvkjp54"]
 
 [ext_resource type="Script" uid="uid://dmtq4640bkxss" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cgdlbgcolgeic" path="res://assets/bg/bg1.jpg" id="2_h2yge"]
@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://b2prg4gu4t3it" path="res://assets/flora/stone_algea1.png" id="6_dg77c"]
 [ext_resource type="Texture2D" uid="uid://xclpgmc3ia8" path="res://assets/flora/aloevera1.png" id="7_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://bv4p4fm5uln7p" path="res://assets/flora/coral7.png" id="9_82xsv"]
-[ext_resource type="Texture2D" uid="uid://cj8mgq566as3r" path="res://eegg/steam_train.png" id="11_dg77c"]
 [ext_resource type="PackedScene" uid="uid://cm3jxb3bpthyy" path="res://diver.tscn" id="11_yaehf"]
 [ext_resource type="Texture2D" uid="uid://c6tq32wbv71o" path="res://eegg/steam_train_2.png" id="11_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://btlj8f7am5hso" path="res://assets/flora/coral3.png" id="12_ryguw"]
@@ -24,6 +23,19 @@
 [ext_resource type="Texture2D" uid="uid://i1ut236sh756" path="res://assets/blubber_spritesheet.png" id="16_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://crx85w07j0jxl" path="res://assets/flora/coral5.png" id="18_ryguw"]
 [ext_resource type="Texture2D" uid="uid://dbaidphh58u10" path="res://assets/flora/coral2.png" id="20_d13ii"]
+[ext_resource type="Texture2D" uid="uid://umyapgj3ml3m" path="res://assets/xmas_special/riding_santa/riding_santa_000.png" id="20_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://6uyymav8a5j3" path="res://assets/xmas_special/riding_santa/riding_santa_001.png" id="21_facbu"]
+[ext_resource type="Texture2D" uid="uid://b8opoh7mh2eak" path="res://assets/xmas_special/riding_santa/riding_santa_002.png" id="22_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://bhn4cntca16ea" path="res://assets/xmas_special/riding_santa/riding_santa_003.png" id="23_come4"]
+[ext_resource type="Texture2D" uid="uid://ne2j221w7lqm" path="res://assets/xmas_special/riding_santa/riding_santa_004.png" id="24_h8e4i"]
+[ext_resource type="PackedScene" uid="uid://cad3ds7aelsg6" path="res://xmas_tree.tscn" id="25_0odxb"]
+[ext_resource type="Texture2D" uid="uid://bbglsq3ojuhyv" path="res://assets/xmas_special/riding_santa/riding_santa_005.png" id="25_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://biselvrly3kvh" path="res://assets/xmas_special/riding_santa/riding_santa_006.png" id="26_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://c6l7gluhtehea" path="res://assets/xmas_special/riding_santa/riding_santa_007.png" id="27_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://dasf0kx8vrobq" path="res://assets/xmas_special/riding_santa/riding_santa_008.png" id="28_gngh3"]
+[ext_resource type="Texture2D" uid="uid://b7hq2twefmogf" path="res://assets/xmas_special/riding_santa/riding_santa_009.png" id="29_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://ckdxbba60vauw" path="res://assets/xmas_special/riding_santa/riding_santa_010.png" id="30_qnost"]
+[ext_resource type="Texture2D" uid="uid://81uxffrtrd27" path="res://assets/xmas_special/riding_santa/riding_santa_011.png" id="31_wnkbs"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2cqfq"]
 particles_animation = true
@@ -33,9 +45,53 @@ particles_anim_loop = true
 
 [sub_resource type="Curve2D" id="Curve2D_efxa6"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -254, -43, -241.56793, 42.675972, 241.56793, -42.675972, 1126, -94, 146.35767, 312.477, -146.35767, -312.477, 1572, -469, 138.7322, -208.55304, -138.7322, 208.55304, 985, -337, -107.12218, 384.00717, 107.12218, -384.00717, 345, -487, -156.9668, 18.072613, 156.9668, -18.072613, 914, -915, -195.47247, 21.465954, 195.47247, -21.465954, 1533, -871, -82.3645, 201.0328, 82.3645, -201.0328, 1938, -1189)
+"points": PackedVector2Array(0, 0, 0, 0, -231.19081, -461.72357, -447.60208, 71.57912, 447.60208, -71.57912, 494.40805, -341.31946, -898.9415, -90.831894, 898.9415, 90.831894, 2084.975, -931.73706)
 }
-point_count = 8
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f6a44"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_ok6jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_facbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_b1qrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_come4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_h8e4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4lmeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0cp0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_d2t1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gngh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0n3wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_qnost")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_wnkbs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_0xm2m")
@@ -222,6 +278,10 @@ scale = Vector2(0.50006735, 0.4802271)
 skew = 0.060435414
 texture = ExtResource("15_vivmo")
 
+[node name="xmas_tree2" parent="Aquarium/bg_layer_1" instance=ExtResource("25_0odxb")]
+position = Vector2(159, 1033)
+scale = Vector2(0.6120475, 0.9496336)
+
 [node name="Coral3" type="Sprite2D" parent="Aquarium/bg_layer_1"]
 position = Vector2(129, 948)
 scale = Vector2(1.0721925, 1.0387756)
@@ -234,6 +294,13 @@ modulate = Color(0.7490196, 0.6509804, 0.28627452, 1)
 position = Vector2(275, 731)
 swim_speed = 400
 anim_speed_scale = 3.5
+wobble_radius = 30.0
+
+[node name="coralfish" parent="Aquarium/fish_layer1" instance=ExtResource("4_1bvp3")]
+position = Vector2(237, 349)
+fish_type = 4
+wobble_radius = 10.0
+wooble_y_freq = 0.2
 
 [node name="bg_layer_2" type="Node2D" parent="Aquarium"]
 position = Vector2(1087, 688)
@@ -263,7 +330,7 @@ texture = ExtResource("5_efxa6")
 [node name="fish_layer2" type="Node2D" parent="Aquarium"]
 
 [node name="jellyfish2" parent="Aquarium/fish_layer2" instance=ExtResource("4_1bvp3")]
-position = Vector2(1332, 472)
+position = Vector2(1545, 571)
 fish_type = 2
 swim_speed = 80
 debug_ai = true
@@ -294,16 +361,27 @@ scale = Vector2(2.255476, 2.1964064)
 texture = ExtResource("5_efxa6")
 
 [node name="fish_layer3" type="Node2D" parent="Aquarium"]
+visible = false
 
 [node name="submarine" parent="Aquarium/fish_layer3" instance=ExtResource("4_1bvp3")]
-position = Vector2(761, 974)
+position = Vector2(950, 1009)
 fish_type = 3
 swim_speed = 122
 anim_speed_scale = 2.0
+wobble_radius = 20.0
 debug_ai = true
+ai_ratio_idle_vs_action = 1.0
+
+[node name="red_coralfish" parent="Aquarium/fish_layer3" instance=ExtResource("4_1bvp3")]
+modulate = Color(0.98039216, 0.47058824, 1, 1)
+position = Vector2(1054, 921)
+fish_type = 4
+swim_speed = 120
+wobble_radius = 10.0
+ai_ratio_idle_vs_action = 0.85
+ai_ratio_wobble_vs_swimlr = 0.7
 
 [node name="train" type="Node2D" parent="Aquarium"]
-visible = false
 position = Vector2(35, 1072)
 
 [node name="track" type="Node2D" parent="Aquarium/train"]
@@ -338,20 +416,24 @@ scale = Vector2(0.345, -0.347)
 texture = ExtResource("12_ycdy4")
 
 [node name="train_path" type="Path2D" parent="Aquarium/train"]
+position = Vector2(-21, 41.99994)
+scale = Vector2(0.9991746, 0.95511687)
 curve = SubResource("Curve2D_efxa6")
 
 [node name="train_pathfollow" type="PathFollow2D" parent="Aquarium/train/train_path"]
-position = Vector2(-254, -43)
-rotation = -0.0073117046
+position = Vector2(-231.19081, -461.72357)
+rotation = 0.60438603
+
+[node name="riding_santa" type="AnimatedSprite2D" parent="Aquarium/train/train_path/train_pathfollow"]
+position = Vector2(1.9811611, -56.990654)
+scale = Vector2(-0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_f6a44")
+autoplay = "default"
 
 [node name="SteamTrain2" type="Sprite2D" parent="Aquarium/train/train_path/train_pathfollow"]
+visible = false
 position = Vector2(9.93629, -1.5066719)
 texture = ExtResource("11_ycdy4")
-
-[node name="SteamTrain" type="Sprite2D" parent="Aquarium/train/train_path/train_pathfollow"]
-visible = false
-scale = Vector2(0.1827074, 0.18270737)
-texture = ExtResource("11_dg77c")
 
 [node name="bg_layer_4" type="Node2D" parent="Aquarium"]
 position = Vector2(1087, 688)
@@ -397,6 +479,10 @@ texture = ExtResource("6_dg77c")
 position = Vector2(-856.0043, 665.8114)
 scale = Vector2(0.4455899, 0.31190327)
 texture = ExtResource("18_ryguw")
+
+[node name="xmas_tree1" parent="Aquarium/bg_layer_4" instance=ExtResource("25_0odxb")]
+position = Vector2(1116.1992, 699.36707)
+scale = Vector2(1.8854717, 1.7660784)
 
 [node name="Coral2" type="Sprite2D" parent="Aquarium/bg_layer_4"]
 position = Vector2(1234.9836, 552.7826)

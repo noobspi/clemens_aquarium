@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://cad3ds7aelsg6"]
+
+[ext_resource type="Texture2D" uid="uid://balqmp685r5i6" path="res://assets/xmas_special/xmas_tree/xmas_tree_000.png" id="1_v3drf"]
+[ext_resource type="Texture2D" uid="uid://7mlvral3nm5t" path="res://assets/xmas_special/xmas_tree/xmas_tree_001.png" id="2_m65wk"]
+[ext_resource type="Texture2D" uid="uid://dsjbnr7mxffsd" path="res://assets/xmas_special/xmas_tree/xmas_tree_005.png" id="3_m65wk"]
+[ext_resource type="Texture2D" uid="uid://dh5gmll3epl8r" path="res://assets/xmas_special/xmas_tree/xmas_tree_006.png" id="3_y3j2l"]
+[ext_resource type="Script" uid="uid://bo0e07csl53dx" path="res://xmas_tree.gd" id="4_m65wk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y3j2l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_v3drf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m65wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m65wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y3j2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m65wk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("4_m65wk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-8, -239)
+scale = Vector2(1.9326241, 1.932624)
+sprite_frames = SubResource("SpriteFrames_y3j2l")
+frame_progress = 0.2631847
