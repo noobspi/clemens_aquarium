@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://c7cpgkmvkjp54"]
+[gd_scene load_steps=45 format=3 uid="uid://c7cpgkmvkjp54"]
 
 [ext_resource type="Script" uid="uid://dmtq4640bkxss" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cgdlbgcolgeic" path="res://assets/bg/bg1.jpg" id="2_h2yge"]
@@ -36,6 +36,10 @@
 [ext_resource type="Texture2D" uid="uid://b7hq2twefmogf" path="res://assets/xmas_special/riding_santa/riding_santa_009.png" id="29_0n3wm"]
 [ext_resource type="Texture2D" uid="uid://ckdxbba60vauw" path="res://assets/xmas_special/riding_santa/riding_santa_010.png" id="30_qnost"]
 [ext_resource type="Texture2D" uid="uid://81uxffrtrd27" path="res://assets/xmas_special/riding_santa/riding_santa_011.png" id="31_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://d03plcw4bnxne" path="res://assets/xmas_special/snow/snow1.png" id="37_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://cr6n23wbf5m8s" path="res://assets/xmas_special/snow/snow2.png" id="38_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://xyq5dx2ta1c3" path="res://assets/xmas_special/snow/snow3.png" id="39_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://cyqon7y0aak6i" path="res://assets/xmas_special/snow/snow4.png" id="40_d2t1y"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2cqfq"]
 particles_animation = true
@@ -93,10 +97,17 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gngh3"]
+particles_animation = true
+particles_anim_h_frames = 4
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
 [node name="main" type="Node2D"]
 script = ExtResource("1_0xm2m")
 
 [node name="BG-Folie" type="Node2D" parent="."]
+visible = false
 
 [node name="water" type="Sprite2D" parent="BG-Folie"]
 visible = false
@@ -499,5 +510,76 @@ visible = false
 position = Vector2(1487, 557)
 texture = ExtResource("13_w48qg")
 script = ExtResource("14_vivmo")
+
+[node name="snow_particle" type="Node2D" parent="."]
+
+[node name="snow1" type="CPUParticles2D" parent="snow_particle"]
+self_modulate = Color(0.6901961, 0.9019608, 1, 0.79607844)
+material = SubResource("CanvasItemMaterial_gngh3")
+position = Vector2(982, -70)
+amount = 14
+texture = ExtResource("37_h8e4i")
+lifetime = 7.0
+randomness = 0.63
+emission_shape = 3
+emission_rect_extents = Vector2(1000, 10)
+spread = 0.0
+gravity = Vector2(0, 40)
+anim_speed_min = 1.0
+anim_speed_max = 2.0
+
+[node name="snow2" type="CPUParticles2D" parent="snow_particle"]
+material = SubResource("CanvasItemMaterial_gngh3")
+position = Vector2(982, -70)
+amount = 10
+texture = ExtResource("38_4lmeg")
+lifetime = 7.0
+speed_scale = 1.33
+randomness = 0.63
+lifetime_randomness = 0.2
+emission_shape = 3
+emission_rect_extents = Vector2(500, 10)
+spread = 0.0
+gravity = Vector2(0, 50)
+anim_speed_min = 1.0
+anim_speed_max = 2.0
+
+[node name="snow3" type="CPUParticles2D" parent="snow_particle"]
+self_modulate = Color(0.6313726, 0.7294118, 1, 0.72156864)
+material = SubResource("CanvasItemMaterial_gngh3")
+position = Vector2(645, -42)
+amount = 12
+texture = ExtResource("39_0cp0l")
+lifetime = 3.5
+randomness = 0.71
+lifetime_randomness = 0.46
+emission_shape = 3
+emission_rect_extents = Vector2(1000, 10)
+spread = 0.0
+gravity = Vector2(0, 60)
+initial_velocity_min = 103.1
+initial_velocity_max = 206.19
+angular_velocity_min = 155.88
+angular_velocity_max = 163.3
+anim_speed_min = 1.0
+anim_speed_max = 2.0
+
+[node name="snow4" type="CPUParticles2D" parent="snow_particle"]
+material = SubResource("CanvasItemMaterial_gngh3")
+position = Vector2(620, -60)
+amount = 10
+texture = ExtResource("40_d2t1y")
+lifetime = 8.0
+randomness = 0.71
+lifetime_randomness = 0.46
+emission_shape = 3
+emission_rect_extents = Vector2(700, 10)
+spread = 0.0
+gravity = Vector2(0, 150)
+initial_velocity_min = 40.0
+initial_velocity_max = 100.0
+angular_velocity_max = 29.69
+anim_speed_min = 1.0
+anim_speed_max = 2.0
 
 [connection signal="reached_target" from="Aquarium/fish_layer0/schooli" to="." method="_on_fish_reached_target"]
